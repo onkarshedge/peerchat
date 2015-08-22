@@ -12,7 +12,6 @@ public class Pone {
 				try {
 					soc.receive(pk_recv);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				String msg=new String(pk_recv.getData(),0,pk_recv.getLength());
@@ -39,7 +38,6 @@ public class Pone {
 		try {
 			soc.send(pk_send);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

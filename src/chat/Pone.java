@@ -56,7 +56,6 @@ public class Pone {
 		try {
 			obj.send(new BufferedReader(new InputStreamReader(System.in)).readLine());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		}

@@ -56,11 +56,11 @@ public class Ptwo {
 		try {
 			obj.send(new BufferedReader(new InputStreamReader(System.in)).readLine());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		}
 	}
 
 }
-
+//addede new line comment

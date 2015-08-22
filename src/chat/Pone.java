@@ -4,8 +4,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
+/* #include<iostream>
+using namespace std;
 
+int main()
+{
+	int i;
+	while(1)
+		repeat myself
+		
+	return 0;
+}
+*/
 public class Pone {
+
 	Thread t1=new Thread(){
 		public void run(){
 			while(true){

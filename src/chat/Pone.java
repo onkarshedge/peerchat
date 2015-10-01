@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
-//exploring and understanding
+
 public class Pone {
 	Thread t1=new Thread(){
 		public void run(){
@@ -15,7 +15,7 @@ public class Pone {
 					e.printStackTrace();
 				}
 				String msg=new String(pk_recv.getData(),0,pk_recv.getLength());
-				System.out.println(msg);
+				System.out.println(pk_recv.getSocketAddress()+msg);
 			}
 		}
 	};
@@ -30,7 +30,7 @@ public class Pone {
 		} catch (SocketException e) {
 			e.printStackTrace();
 		}
-		pk_send=new DatagramPacket(buf,buf.length,new InetSocketAddress(30000));
+		pk_send=new DatagramPacket(buf,buf.length,new InetSocketAddress(30001));
 		pk_recv=new DatagramPacket(buf, buf.length);
 	}
 	public void send(String messg){

@@ -27,7 +27,7 @@ public class Ptwo {
 	public Ptwo() {
 		byte[] buf=new byte[1024];
 		try {
-			soc=new DatagramSocket(30000);
+			soc=new DatagramSocket(30001);
 		} catch (SocketException e) {
 			e.printStackTrace();
 		}
@@ -63,4 +63,4 @@ public class Ptwo {
 	}
 
 }
-//addede new line comment
+
